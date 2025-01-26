@@ -1,0 +1,14 @@
+.c-about{
+    &__list{
+        &>li{
+            font-size: $font-size-base;
+            &:first-child{
+                margin-bottom: 30px;
+                
+            }
+            &:last-child{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.l-main{
+    &__mainvisual{
+        &--pc{
+            height: 420px;
+            width: 100vw;
+            object-fit: cover;
+            // display: none;
+        }
+    }
+    // &__wrapper{
+    //     margin-top: 80px;
+    // }
+
+}

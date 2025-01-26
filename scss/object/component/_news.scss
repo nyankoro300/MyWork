@@ -1,0 +1,28 @@
+.c-news{
+
+    &__list{
+        display: flex;
+        border-bottom: solid 1px $border-line-color;
+        padding: 15px;
+        @include sp{
+            display: block;
+        }
+        &:first-child{
+            border-top: solid 1px $border-line-color;
+        }
+        &__time{
+            width: 20%;
+            font-size: $font-size-base;
+            color: $main-font-color;
+        }
+        &__caption{
+            width: 80%;
+            font-size: $font-size-base;
+            color: $main-font-color;
+            @include sp{
+                width: 100%;
+            }
+        }
+
+    }
+}

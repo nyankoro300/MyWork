@@ -1,0 +1,47 @@
+@charset "utf-8";
+ //====================
+ //foundation
+ //====================
+@import "./foundation/_reset";
+@import "./foundation/base";
+@import "./foundation/variables";
+@import "./foundation/breakpoints";
+ //====================
+ //layout
+ //====================
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+ //====================
+ //object
+ //====================
+
+@import "./object/component/nav";
+@import "./object/component/about";
+@import "./object/component/work";
+@import "./object/component/news";
+@import "./object/component/contact";
+@import "./object/component/button";
+@import "./object/project/section";
+
+
+
+// ここから実験----------------
+.button{
+    width: 200px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 14px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    &--blue{
+        @extend .button;
+        background: blue;
+    }
+    &--red{
+        @extend .button;
+        background: red;
+    }
+
+}

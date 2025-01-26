@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/portfolio.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>My Work</title>
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__wrapper">
+            <div class="l-header__left">
+                <h1>
+                    <img src="./img/logo.svg" alt="header-logo">
+                </h1>
+            </div>
+        
+            <nav class="l-header__right">
+                <ul class="c-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><img class="c-nav__icon-instagram" src="./img/icon-instagram.png" alt="instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="l-main">
+        <div class="l-main__mainvisual">
+            <img src="./img/mainvisual-pc.jpg" alt="mainvisual" class="l-main__mainvisual--pc">
+        </div>
+        <div class="p-sections">
+            <section class="p-section c-about">
+                <h2 class="p-section__title">About</h2>
+                <ul class="c-about__list">
+                    <li>Xxxxx Ashley</li>
+                    <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                    <li>tel: 000-0000-0000</li>
+                    <li>url: www.xxxxxx.jp</li>
+                    <li>mail: xxx@xxxxxx.jp</li>
+                </ul>
+                <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </section>
+            <section class="p-section c-work">
+                <h2 class="p-section__title">Work</h2>
+                <ul class="c-work__list">
+                    <li><img src="./img/works1.jpg" alt="works1"></li>
+                    <li><img src="./img/works2.jpg" alt="works2"></li>
+                    <li><img src="./img/works3.jpg" alt="works3"></li>
+                    <li><img src="./img/works4.jpg" alt="works4"></li>
+                    <li><img src="./img/works5.jpg" alt="works5"></li>
+                    <li><img src="./img/works6.jpg" alt="works6"></li>
+                </ul>
+            </section>
+            <section class="p-section c-news">
+                <h2 class="p-section__title">News</h2>
+                <ul class="c-news__lists">
+                    <li class="c-news__list">
+                        <p class="c-news__list__time">2020.XX.XX</p>
+                        <p class="c-news__list__caption">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</p>
+                    </li>
+                    <li class="c-news__list">
+                        <p class="c-news__list__time">2020.XX.XX</p>
+                        <p class="c-news__list__caption">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</p>
+                    </li>
+                    <li class="c-news__list">
+                        <p class="c-news__list__time">2019.XX.XX</p>
+                        <p class="c-news__list__caption">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</p>
+                    </li>
+                    <li class="c-news__list">
+                        <p class="c-news__list__time">2019.XX.XX</p>
+                        <p class="c-news__list__caption">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</p>
+                    </li>
+                    <li class="c-news__list">
+                        <p class="c-news__list__time">2019.XX.XX</p>
+                        <p class="c-news__list__caption">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="p-section c-contact">
+                <h2 class="p-section__title">Contact</h2>
+                <form class="c-contact__wrapper" action="#" method="post">
+                    <dl class="c-contact__list">
+                        <dt class="c-contact__label"><label for="name">NAME</label></dt>
+                        <dd class="c-contact__input"><input type="text" name="your-name"></dd>
+                        <dt class="c-contact__label"><label for="email">E-mail</label></dt>
+                        <dd class="c-contact__input"><input type="email" name="your-email"></dd>
+                        <dt class="c-contact__label"><label for="message">MESSAGE</label></dt>
+                        <dd class="c-contact__textarea"><textarea name="your-message" id="message"></textarea></dd>
+                    </dl>
+                    <div class="c-button">
+                        <input type="submit" value="送信">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="l-footer">
+        <p class="l-footer__copyright">©2020 My Work</p>
+    </footer>
+    <!-- ↓ここから実験=================================== -->
+    <p>Hello world</p>
+    <button class="button--blue">button1</button>
+    <button class="button--red">button2</button>
+    <!-- ================================================ -->
+</body>
+</html>

@@ -1,0 +1,11 @@
+.c-button{
+    text-align: center;
+    margin: 0 auto;
+    background-color: $main-font-color;
+    width: 200px;
+    // height: 52px;
+    &>input{
+        color: white;
+        padding:15px 0 ;
+    }
+}

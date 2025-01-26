@@ -1,0 +1,489 @@
+@charset "UTF-8";
+/* resset.dev • v5.0.2 */
+/* # =================================================================
+   # Global selectors
+   # ================================================================= */
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
+  box-sizing: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit; /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
+  vertical-align: inherit;
+}
+
+* {
+  padding: 0; /* Reset `padding` and `margin` of all elements */
+  margin: 0;
+}
+
+/* # =================================================================
+   # General elements
+   # ================================================================= */
+hr {
+  overflow: visible; /* Show the overflow in Edge and IE */
+  height: 0; /* Add the correct box sizing in Firefox */
+  color: inherit; /* Correct border color in Firefox. */
+}
+
+details,
+main {
+  display: block; /* Render the `main` element consistently in IE. */
+}
+
+summary {
+  display: list-item; /* Add the correct display in all browsers */
+}
+
+small {
+  font-size: 80%; /* Set font-size to 80% in `small` elements */
+}
+
+[hidden] {
+  display: none; /* Add the correct display in IE */
+}
+
+abbr[title] {
+  border-bottom: none; /* Remove the bottom border in Chrome 57 */
+  /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+a {
+  background-color: transparent; /* Remove the gray background on active links in IE 10 */
+}
+
+a:active,
+a:hover {
+  outline-width: 0; /* Remove the outline when hovering in all browsers */
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* Specify the font family of code elements */
+}
+
+pre {
+  font-size: 1em; /* Correct the odd `em` font sizing in all browsers */
+}
+
+b,
+strong {
+  font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari */
+}
+
+/* https://gist.github.com/unruthless/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  border-color: inherit; /* Correct border color in all Chrome, Edge, and Safari. */
+  text-indent: 0; /* Remove text indentation in Chrome, Edge, and Safari */
+}
+
+iframe {
+  border-style: none;
+}
+
+/* # =================================================================
+   # Forms
+   # ================================================================= */
+input {
+  border-radius: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto; /* Correct the cursor style of increment and decrement buttons in Chrome */
+}
+
+[type=search] {
+  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
+  outline-offset: -2px; /* Correct the outline style in Safari */
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; /* Remove the inner padding in Chrome and Safari on macOS */
+}
+
+textarea {
+  overflow: auto; /* Internet Explorer 11+ */
+  resize: vertical; /* Specify textarea resizability */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit; /* Specify font inheritance of form elements */
+}
+
+optgroup {
+  font-weight: bold; /* Restore the font weight unset by the previous rule */
+}
+
+button {
+  overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */
+}
+
+button,
+select {
+  text-transform: none; /* Firefox 40+, Internet Explorer 11- */
+}
+
+/* Apply cursor pointer to button elements */
+button,
+[type=button],
+[type=reset],
+[type=submit],
+[role=button] {
+  cursor: pointer;
+}
+
+/* Remove inner padding and border in Firefox 4+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Replace focus style removed in the border reset above */
+button:-moz-focusring,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  outline: 1px dotted ButtonText;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button; /* Correct the inability to style clickable types in iOS */
+}
+
+/* Remove the default button styling in all browsers */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-style: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline-width: 0;
+}
+
+/* Style select like a standard input */
+select {
+  -moz-appearance: none; /* Firefox 36+ */
+  -webkit-appearance: none; /* Chrome 41+ */
+}
+
+select::-ms-expand {
+  display: none; /* Internet Explorer 11+ */
+}
+
+select::-ms-value {
+  color: currentColor; /* Internet Explorer 11+ */
+}
+
+legend {
+  border: 0; /* Correct `color` not being inherited in IE 8/9/10/11 */
+  color: inherit; /* Correct the color inheritance from `fieldset` elements in IE */
+  display: table; /* Correct the text wrapping in Edge and IE */
+  max-width: 100%; /* Correct the text wrapping in Edge and IE */
+  white-space: normal; /* Correct the text wrapping in Edge and IE */
+  max-width: 100%; /* Correct the text wrapping in Edge 18- and IE */
+}
+
+::-webkit-file-upload-button {
+  /* Correct the inability to style clickable types in iOS and Safari */
+  -webkit-appearance: button;
+  color: inherit;
+  font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
+}
+
+/* Replace pointer cursor in disabled elements */
+[disabled] {
+  cursor: default;
+}
+
+/* # =================================================================
+   # Specify media element style
+   # ================================================================= */
+img {
+  border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
+}
+
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera */
+progress {
+  vertical-align: baseline;
+}
+
+/* # =================================================================
+   # Accessibility
+   # ================================================================= */
+/* Specify the progress cursor of updating elements */
+[aria-busy=true] {
+  cursor: progress;
+}
+
+/* Specify the pointer cursor of trigger elements */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+[aria-disabled=true] {
+  cursor: default;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+.l-header {
+  width: 100vw;
+  height: 270px;
+  background-color: white;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .l-header {
+    height: auto;
+    margin-top: 20px;
+  }
+}
+.l-header__wrapper {
+  padding: 121px 4%;
+  max-width: 857.6px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .l-header__wrapper {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0 4%;
+    position: static;
+  }
+}
+.l-header__left {
+  width: 120px;
+}
+@media screen and (max-width: 600px) {
+  .l-header__left h1 {
+    height: 36px;
+  }
+}
+.l-header__right {
+  color: #24292e;
+  width: 326px;
+}
+@media screen and (max-width: 600px) {
+  .l-header__right {
+    padding: 10px 0;
+  }
+}
+
+.l-main__mainvisual--pc {
+  height: 420px;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.l-footer {
+  background-color: #24292e;
+}
+.l-footer__copyright {
+  color: white;
+  text-align: center;
+  font-size: 8px;
+  padding: 10px 0;
+}
+
+.c-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.c-nav > li {
+  font-size: 14.4px;
+}
+.c-nav > li > a {
+  color: #24292e;
+}
+.c-nav__icon-instagram {
+  width: 20px;
+}
+
+.c-about__list > li {
+  font-size: 14.4px;
+}
+.c-about__list > li:first-child {
+  margin-bottom: 30px;
+}
+.c-about__list > li:last-child {
+  margin-bottom: 30px;
+}
+
+.c-work__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 2%;
+}
+.c-work__list li {
+  width: 31%;
+}
+.c-work__list li img {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .c-work__list li {
+    width: 100%;
+  }
+}
+
+.c-news__list {
+  display: flex;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+@media screen and (max-width: 600px) {
+  .c-news__list {
+    display: block;
+  }
+}
+.c-news__list:first-child {
+  border-top: solid 1px #c8c8c8;
+}
+.c-news__list__time {
+  width: 20%;
+  font-size: 14.4px;
+  color: #24292e;
+}
+.c-news__list__caption {
+  width: 80%;
+  font-size: 14.4px;
+  color: #24292e;
+}
+@media screen and (max-width: 600px) {
+  .c-news__list__caption {
+    width: 100%;
+  }
+}
+
+.c-contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .c-contact__list {
+    flex-direction: column;
+  }
+}
+.c-contact__list input textarea {
+  width: 100%;
+}
+.c-contact__label {
+  width: 15%;
+}
+.c-contact__label > label {
+  font-size: 14.4px;
+}
+.c-contact__input, .c-contact__textarea {
+  width: 85%;
+  border: solid 1px #c8c8c8;
+  height: 44px;
+  margin-bottom: 10px;
+}
+.c-contact__textarea {
+  height: 166px;
+}
+
+.c-button {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #24292e;
+  width: 200px;
+}
+.c-button > input {
+  color: white;
+  padding: 15px 0;
+}
+
+.p-sections {
+  max-width: 857.6px;
+  margin: 0 auto;
+  padding: 80px 4% 0;
+}
+
+.p-section {
+  margin-bottom: 130px;
+}
+.p-section > h2 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.button, .button--red, .button--blue {
+  width: 200px;
+  padding: 13px;
+  text-align: center;
+  border-radius: 14px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.button--blue {
+  background: blue;
+}
+.button--red {
+  background: red;
+}/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,10 @@
+.l-footer{
+    background-color: $main-font-color;
+    // height: 32px;
+    &__copyright{
+        color: white;
+        text-align: center;
+        font-size: 8px;
+        padding: 10px 0;
+    }
+}

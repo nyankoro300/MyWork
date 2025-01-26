@@ -1,0 +1,16 @@
+
+    .c-nav{
+        display: flex;
+        justify-content: space-around;
+
+        &>li{
+            font-size: $font-size-base;
+            &>a{
+                color: $main-font-color;
+            }
+        }
+
+        &__icon-instagram{
+            width: 20px;
+        }
+    }
